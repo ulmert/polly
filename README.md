@@ -9,7 +9,7 @@ When active channels exceeds 6-7 sometimes an audible click can be heard upon sa
 ```
 
 Note: If a parameter is configured to be off (e.g. velocity) then *no control change will be transmitted*.
-Setting **release time** will trigger a control value of 127 *upon a note on event* and the configured *release time on note off*.
+Setting **release time** will trigger a control value of 127 (hold) *upon note on events* and the configured *release time on note off* - this enables sample duration to be controlled by key / note duration.
 
 ## Channels (1-9)
 ### Input
@@ -59,6 +59,8 @@ RVRB 2| Reverb setting (OFF, ENABLE, DISABLE, RANDOM)
 RVRB 3| Reverb setting (OFF, ENABLE, DISABLE, RANDOM)
 RVRB 4| Reverb setting (OFF, ENABLE, DISABLE, RANDOM)
 PAN| Ping-pong panning width (OFF, 1 - 4)
+
+Sample select (using any of the 4 enabled sample slots) will only be send if **selection mode** is set (RANDOM, KEYPRESS or CYCLE). When **KEYPRESS** is selected, the note velocity will determine which of the (sample number) slots to use. Also note that each sample slot is mapped to corresponding reverb slot.
 
 ## MIDI Buffer Monitor
 ### Input
