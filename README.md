@@ -11,7 +11,6 @@ When active channels exceeds 6-7 sometimes an audible click can be heard upon sa
 Note: If a parameter is configured to be off (e.g. velocity) then *no control change will be transmitted*.
 Setting **release time** will trigger a control value of 127 *upon a note on event* and the configured *release time on note off*.
 
-
 ## Channels (1-9)
 ### Input
 Key(s) | Action
@@ -75,4 +74,7 @@ Key(s) | Action
 B | Next page
 U/D | Move between save slots
 L/R | Hold to save / Hold to load
+
+## Short demonstration
+[![](http://img.youtube.com/vi/oxSC8LzjMGI/0.jpg)](http://www.youtube.com/watch?v=oxSC8LzjMGI)
 
